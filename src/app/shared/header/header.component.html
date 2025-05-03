@@ -349,7 +349,7 @@
                   />
                 </svg>
               </span>
-              <p>Envío Express GRATIS en pedidos superiores a $570</p>
+              <p>Av. La Marina 1110 Pueblo Libre - Lima - Perú</p>
             </div>
           </div>
           <div class="col-md-6">
@@ -463,11 +463,11 @@
                   </div>
                   <div class="tp-header-search-category">
                     <select>
-                      <option>Select Category</option>
-                      <option>Mobile</option>
-                      <option>Digital Watch</option>
-                      <option>Computer</option>
-                      <option>Watch</option>
+                      <option>Seleccionar Categoría</option>
+                      <option>Móvil</option>
+                      <option>Reloj Digital</option>
+                      <option>Computadora</option>
+                      <!-- <option>Reloj</option> -->
                     </select>
                   </div>
                   <div class="tp-header-search-btn">
@@ -739,12 +739,23 @@
                       />
                     </svg>
                   </span>
-                  All Departments
+                  Categorías
                 </button>
                 <nav class="tp-category-menu-content">
                   <ul>
                     @for(MENU_CAT of categories_menus;track MENU_CAT.id) {
-                    @if(MENU_CAT.categories.length == 0){
+                    @if(MENU_CAT.id !== 3 && MENU_CAT.id !== 4 && MENU_CAT.id
+                    !== 5 && MENU_CAT.id !== 6 && MENU_CAT.id !== 7 &&
+                    MENU_CAT.id !== 11 && MENU_CAT.id !== 16 && MENU_CAT.id !==
+                    26 && MENU_CAT.id !== 30 && MENU_CAT.id !== 31 &&
+                    MENU_CAT.id !== 32 && MENU_CAT.id !== 33 && MENU_CAT.id !==
+                    34 && MENU_CAT.id !== 35 && MENU_CAT.id !== 36 &&
+                    MENU_CAT.id !== 37 && MENU_CAT.id !== 38 && MENU_CAT.id !==
+                    39 && MENU_CAT.id !== 40 && MENU_CAT.id !== 41 &&
+                    MENU_CAT.id !== 42 && MENU_CAT.id !== 43 && MENU_CAT.id !==
+                    44 && MENU_CAT.id !== 45 && MENU_CAT.id !== 46 &&
+                    MENU_CAT.id !== 47 && MENU_CAT.id !== 48 && MENU_CAT.id !==
+                    49) { @if(MENU_CAT.categories.length == 0){
                     <li>
                       <a href="#" onclick="return false;">
                         <span [id]="'icon-' + MENU_CAT.id">
@@ -798,38 +809,7 @@
                         }
                       </ul>
                     </li>
-                    }
-                    <!-- else{ -->
-
-                    <!-- <li class="has-dropdown">
-                                       <a href="shop.html">
-                                          <span>
-                                             <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M14.5 1H2.5C1.67157 1 1 1.67157 1 2.5V10C1 10.8284 1.67157 11.5 2.5 11.5H14.5C15.3284 11.5 16 10.8284 16 10V2.5C16 1.67157 15.3284 1 14.5 1Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M5.5 14.5H11.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M8.5 11.5V14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                             </svg>
-                                          </span>
-                                          Computers</a>
-        
-                                          <ul class="tp-submenu">
-                                             <li class="has-dropdown">
-                                                <a href="shop.html">Desktop</a>
-                                                <ul class="tp-submenu">
-                                                   <li><a href="shop.html">Gaming</a></li>
-                                                   <li><a href="shop.html">WorkSpace</a></li>
-                                                   <li><a href="shop.html">Customize</a></li>
-                                                   <li><a href="shop.html">Luxury</a></li>
-                                                </ul>
-                                             </li>
-                                             <li><a href="shop.html">Laptop</a></li>
-                                             <li><a href="shop.html">Console</a></li>
-                                             <li><a href="shop.html">Top Rated</a></li>
-                                          </ul>
-                                    </li> -->
-                    <!-- } -->
-
-                    }
+                    } } }
                   </ul>
                 </nav>
               </div>
@@ -852,12 +832,12 @@
                                   />
                                 </div>
                                 <div class="home-menu-content">
-                                  <h5 class="home-menu-title">Electronics</h5>
+                                  <h5 class="home-menu-title">Electrónicos</h5>
                                 </div>
                               </a>
                             </div>
                           </div>
-                          <div class="col">
+                          <!-- <div class="col">
                             <div class="home-menu-item">
                               <a href="index-2.html">
                                 <div class="home-menu-thumb p-relative fix">
@@ -882,7 +862,7 @@
                                   />
                                 </div>
                                 <div class="home-menu-content">
-                                  <h5 class="home-menu-title">Beauty</h5>
+                                  <h5 class="home-menu-title">Belleza</h5>
                                 </div>
                               </a>
                             </div>
@@ -897,7 +877,7 @@
                                   />
                                 </div>
                                 <div class="home-menu-content">
-                                  <h5 class="home-menu-title">Jewelry</h5>
+                                  <h5 class="home-menu-title">Joyería</h5>
                                 </div>
                               </a>
                             </div>
@@ -916,49 +896,57 @@
                                 </div>
                               </a>
                             </div>
-                          </div>
+                          </div> -->
                         </div>
                       </div>
                     </li>
-                    <li class="has-dropdown has-mega-menu">
+                    <!-- <li class="has-dropdown has-mega-menu">
                       <a href="shop.html">Tienda</a>
                       <div class="shop-mega-menu tp-submenu tp-mega-menu">
                         <div class="row">
                           <div class="col-lg-2">
                             <div class="shop-mega-menu-list">
                               <a href="shop.html" class="shop-mega-menu-title"
-                                >Shop Pages</a
+                                >Páginas de Tienda</a
                               >
                               <ul>
                                 <li>
-                                  <a href="shop-category.html">Grid Category</a>
+                                  <a href="shop-category.html"
+                                    >Categoría en Cuadrícula</a
+                                  >
                                 </li>
-                                <li><a href="shop.html">Grid Layout</a></li>
                                 <li>
-                                  <a href="shop-list.html">List Layout</a>
+                                  <a href="shop.html">Diseño en Cuadrícula</a>
+                                </li>
+                                <li>
+                                  <a href="shop-list.html">Diseño en Lista</a>
                                 </li>
                                 <li>
                                   <a href="shop-masonary.html"
-                                    >Masonary Layout</a
+                                    >Diseño Masonary</a
                                   >
                                 </li>
                                 <li>
                                   <a href="shop-full-width.html"
-                                    >Full width Layout</a
+                                    >Diseño de Ancho Completo</a
                                   >
                                 </li>
                                 <li>
-                                  <a href="shop-1600.html">1600px Layout</a>
+                                  <a href="shop-1600.html">Diseño 1600px</a>
                                 </li>
-                                <li><a href="shop.html">Left Sidebar</a></li>
+                                <li>
+                                  <a href="shop.html"
+                                    >Barra Lateral Izquierda</a
+                                  >
+                                </li>
                                 <li>
                                   <a href="shop-right-sidebar.html"
-                                    >Right Sidebar</a
+                                    >Barra Lateral Derecha</a
                                   >
                                 </li>
                                 <li>
                                   <a href="shop-no-sidebar.html"
-                                    >Hidden Sidebar</a
+                                    >Barra Lateral Oculta</a
                                   >
                                 </li>
                               </ul>
@@ -967,36 +955,44 @@
                           <div class="col-lg-2">
                             <div class="shop-mega-menu-list">
                               <a href="shop.html" class="shop-mega-menu-title"
-                                >Features</a
+                                >Características</a
                               >
                               <ul>
                                 <li>
                                   <a href="shop-filter-dropdown.html"
-                                    >Filter Dropdown</a
+                                    >Filtro Desplegable</a
                                   >
                                 </li>
                                 <li>
                                   <a href="shop-filter-offcanvas.html"
-                                    >Filters Offcanvas</a
+                                    >Filtros Laterales</a
                                   >
                                 </li>
-                                <li><a href="shop.html">Filters Sidebar</a></li>
+                                <li>
+                                  <a href="shop.html"
+                                    >Filtros en Barra Lateral</a
+                                  >
+                                </li>
                                 <li>
                                   <a href="shop-load-more.html"
-                                    >Load More button</a
+                                    >Botón Cargar Más</a
                                   >
                                 </li>
                                 <li>
                                   <a href="shop-infinite-scroll.html"
-                                    >Infinit scrolling</a
+                                    >Desplazamiento Infinito</a
                                   >
                                 </li>
                                 <li>
-                                  <a href="shop-list.html">Collections list</a>
+                                  <a href="shop-list.html"
+                                    >Lista de Colecciones</a
+                                  >
                                 </li>
-                                <li><a href="shop.html">Hidden search</a></li>
+                                <li><a href="shop.html">Búsqueda Oculta</a></li>
                                 <li>
-                                  <a href="shop.html">Search Full screen</a>
+                                  <a href="shop.html"
+                                    >Búsqueda en Pantalla Completa</a
+                                  >
                                 </li>
                               </ul>
                             </div>
@@ -1004,13 +1000,21 @@
                           <div class="col-lg-2">
                             <div class="shop-mega-menu-list">
                               <a href="shop.html" class="shop-mega-menu-title"
-                                >Hover Style</a
+                                >Estilo al Pasar</a
                               >
                               <ul>
-                                <li><a href="shop.html">Hover Style 1</a></li>
-                                <li><a href="shop.html">Hover Style 2</a></li>
-                                <li><a href="shop.html">Hover Style 3</a></li>
-                                <li><a href="shop.html">Hover Style 4</a></li>
+                                <li>
+                                  <a href="shop.html">Estilo al Pasar 1</a>
+                                </li>
+                                <li>
+                                  <a href="shop.html">Estilo al Pasar 2</a>
+                                </li>
+                                <li>
+                                  <a href="shop.html">Estilo al Pasar 3</a>
+                                </li>
+                                <li>
+                                  <a href="shop.html">Estilo al Pasar 4</a>
+                                </li>
                               </ul>
                             </div>
                           </div>
@@ -1024,7 +1028,7 @@
                                 <a
                                   href="shop-category.html"
                                   class="tp-menu-showcase-btn tp-menu-showcase-btn-2"
-                                  >Phones</a
+                                  >Teléfonos</a
                                 >
                               </div>
                             </div>
@@ -1039,14 +1043,14 @@
                                 <a
                                   href="shop-category.html"
                                   class="tp-menu-showcase-btn tp-menu-showcase-btn-2"
-                                  >Cameras</a
+                                  >Cámaras</a
                                 >
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </li>
+                    </li> -->
                     <li class="has-dropdown has-mega-menu">
                       <a href="shop.html">Productos</a>
                       <ul class="tp-submenu tp-mega-menu mega-menu-style-2">
@@ -1220,7 +1224,7 @@
                 </div>
                 <div class="tp-header-contact-content">
                   <h5>Línea directa:</h5>
-                  <p><a href="tel:402-763-282-46">+(402) 763 282 46</a></p>
+                  <p><a href="tel:402-763-282-46">461-8219</a></p>
                 </div>
               </div>
             </div>
